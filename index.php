@@ -187,7 +187,7 @@
             <div class="container">
                 <header class="section-header">
                     <h3>Awards & Accolades</h3>
-                    <p>These are the awards and accolades that I have achieved, on my academic journey. </p>
+                    <p>These are some awards and accolades that I have achieved, on my academic journey so far... </p>
                 </header>
 
                 <div class="">
@@ -239,41 +239,51 @@
                             <div class="hiddenawards">
                                 <div class="row">
 
-                                    <div class="col-12 col-md-8 mb-4">
+                                <div class="col-12 col-md-8 mb-4">
                                         <div class="card">
-                                            <img class="card-img-top" src="img/EDULEARN.jpg" alt="EDULEARN Logo">
+                                            <img class="card-img-top" src="img/5Cs.png" alt=" ">
                                             <div class="card-body">
-                                                <p class="card-text">Speaker at EDULEARN (Spain) 2019 </p>
+                                                <p class="card-text">Collaborative Framework - 5Cs 21st Century Skills (2020) </p>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col-12 col-md-3 mb-4">
                                         <div class="card">
                                             <img class="card-img-top" src="img/ebi.png" alt=" ">
                                             <div class="card-body">
-                                                <p class="card-text">EBI Award Outstanding use of IT and/or Technology
+                                                <p class="card-text">EBI Award Outstanding use of IT and/or Technology (2019)
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-3 mb-4">
+
+
+
+                                    <div class="col-12 col-md-8 mb-4">
                                         <div class="card">
-                                            <img class="card-img-top" src="img/HC.png" alt=" ">
+                                            <img class="card-img-top" src="img/EDULEARN.jpg" alt="EDULEARN Logo">
                                             <div class="card-body">
-                                                <p class="card-text"> Excellence in Learning and Teaching </p>
+                                                <p class="card-text">Presenter: EDULEARN (Spain) (2019) 11th International Conference on Education and New Learning Technologies
+Palma, Spain. 1-3 July, 2019.
+ISBN: 978-84-09-12031-4 / ISSN: 2340-1117
+doi: 10.21125/edulearn.2019
+Publisher: IATED </p>
                                             </div>
                                         </div>
                                     </div>
 
+                                  
                                     <div class="col-12 col-md-3 mb-4">
                                         <div class="card">
-                                            <img class="card-img-top" src="img/HEA.png" alt=" ">
+                                            <img class="card-img-top" src="img/HC.png" alt=" ">
                                             <div class="card-body">
-                                                <p class="card-text">Fellow of the HEA </p>
+                                                <p class="card-text"> Excellence in Learning and Teaching (2018) </p>
                                             </div>
                                         </div>
-                                    </div>
+                                
+
+                                    
+
 
                                 </div>
                             </div> <!-- #HiddenAwards  -->
