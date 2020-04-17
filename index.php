@@ -1,829 +1,706 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <title>Colette Mazzola-Randles</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="colette Mazzola" name="keywords">
+    <meta content="CV Website" name="description">
 
-<meta charset="utf-8">
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta name="description" content="">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
-<meta name="author" content="">
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<title>Colette Mazzola</title>
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
 
-<link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119319669-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<!-- Bootstrap core CSS -->
+  gtag('config', 'UA-119319669-1');
+</script>
 
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
 
-<!-- Font Awsome CDN -->
+            let descriptions = $('.desc-content');
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+            for (var i = 0; i < descriptions.length; i++) {
+                let item = $('.desc-content')[i]
+                let desc = item.innerHTML;
 
-<!-- Custom styles for this template -->
+                let pos = 700;
+                let sym = "...";
 
-<link href="css/scrolling-nav.css" rel="stylesheet">
+                let trunc = "";
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+                let len = desc.length;
+                if (pos == undefined || len <= pos) {
+                    trunc = desc;
+                } else {
+                    let p1 = desc.slice(0, pos - 3);
+                    let p2 = desc.slice(pos - 3);
+                    trunc = `
+            <div class="spoiler-${i}">${p1} ${sym}</div>
+            <div class="seemore" data="${i}"><span class="moretext"> See more</span></div>
+            <div class="desc-more-${i} hidden">${desc}</div>
+            `;
+                }
+
+                item.innerHTML = trunc;
+
+            }
+
+            $('.seemore').on("click", (target) => {
+                let data = $(target)[0].currentTarget.attributes[1].value;
+                let spoiler = ".spoiler-" + data;
+                let all = ".desc-more-" + data;
+
+                $($(target)[0].currentTarget).hide();
+                $(spoiler).hide();
+                $(all).show();
+            })
+        })
+    </script>
 
 </head>
 
-
-
-<body id="page-top">
-
-
-
-<!-- Navigation -->
-
-
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-
-  <div class="container">
-
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">Colette Mazzola</a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-
-      <ul class="navbar-nav ml-auto">
-
-        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#home"><i class="fas fa-home"></i> Home</a> </li>
-
-        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#about"><i class="fas fa-user"></i> About</a> </li>
-
-        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#media"><i class="fas fa-image"></i> Media</a> </li>
-
-        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#timeline"><i class="fas fa-clock"></i> Timeline</a> </li>
-
-        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#recommendations"><i class="fas fa-comments"></i> Recommendations</a> </li>
-
-        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#contact"><i class="fas fa-phone"> </i> Contact</a> </li>
-
-      </ul>
-
-    </div>
-
-  </div>
-
-</nav>
-
-<!-- Navigation -->
-
-<header>
-
-  <section id="home" class="section-padding">
-
-  <div class="header-image"> <img src="./images/profile_image.jpg" class="header-image-image"> </div>
-
-</header>
-
-<section id="about" class="mb-2 bg-light text-dark section-padding container-fluid">
-
-
-
-  <div class="container">
-
-
-
-    <div class="text-center mb-4">
-
-      <h2>Colette Mazzola </h2>
-
-    </div>
-
-        <div class="section-title text-uppercase"> <i class="fas fa-user"></i> About </div>
-
-    <!--******** Journey
-
-    
-
-    <div class="section">
-
-      <div class="section-title text-uppercase"> <i class="fas fa-user"></i> About Me </div>
-
-      <div class="row">
-
-        <div class="col-sm">
-
-          <div class="grid-item">
-
-            <div class="about"> <i class="fas fa-car"></i> My Journey</div>
-
-          </div>
-
-        </div>
-
-        <div class="col-sm">
-
-          <div class="grid-item">
-
-            <div class="about"><i class="fas fa-mouse-pointer"></i> Research Interests </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-sm">
-
-          <div class="grid-item">
-
-            <div class="about"> <i class="fas fa-graduation-cap"></i> Awards & Accolades </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="col-sm">
-
-        <div class="grid-item">
-
-          <div class="about"> <i class="fas fa-bookmark"></i> My Research </div>
-
-        </div>
-
-      </div>
-
-
-
-       *******\-->
-
-      <button class="accordion" id="journey"><i class="fas fa-car"></i> My Journey</button>
-
-      <div class="panel">
-
-        <div class="panel-inner">
-
-          <p>Hi, I’m Colette, thank you for looking at my website… so here is my story so far…</p>
-
-          <p>In 2008 I was working as a receptionist in a local hotel in St Anne's On-Sea, I gave birth to a beautiful little girl, I remember thinking …this small bundle of joy is going to depend on me for the rest of my life. I was not the brightest at school, I left with poor GCSE grades but regardless of my past, I still applied to <a href="https://www.blackpool.ac.uk/">Blackpool and The Fylde College,</a> hoping that it would mark a first step on my career ladder in teaching. I decided that I would enrol on a Computing course, being an adult student, I was worried I wouldn’t fit in, however, I was pleasantly surprised as the course was for only people over 19.</p>
-
-          <p>I successfully completed my level 3 qualification and progressed onto the Interactive Media development degree that was offered as a path for progression. The course beyond challenged me but only further confirmed that I wanted to pursue a career in Interactive Media Development. Throughout my time on my courses, the tutors were helpful to me; I began to see them more as friends than just tutors and knew that this was the department that I wanted to have a career in. </p>
-
-          <p>After successfully completing the BSc Honours Interactive Design (Media) with a First-Class Honours, I secured a lectures position in Computing at Blackpool and the Fylde College, this was my end goal, however, this inspired me to want more. In 2015, I completed my Professional Certificate in Education (PGCE) teacher training. In 2016 I was recognised for the work I was doing and achieved the status of <a href="https://www.heacademy.ac.uk/">Higher Education Academy (HEA) Fellow.</a> </p>
-
-          <p>This recognition gave me motivation to push myself and I decided to apply for a <a href="https://courses.hud.ac.uk/full-time/postgraduate/technology-enhanced-learning-and-innovation-ma">Master’s in Technology Enhanced Learning with Huddersfield University.</a> This course was great for me as I was working full time and I only had to attend four taught sessions per year, these sessions were delivered on a Saturday making it alit more flexible for me to learn.</p>
-
-          <p>After achieving my MSc. I secured a Senior Tutor for Teaching and Learning position in Computing at Blackpool and the Fylde College. This has inspired me to sign up to a new challenge, starting in January 2019 I will embark on a <a href="http://www.lancaster.ac.uk/educational-research/phd/phd-in-e--research-and-technology-enhanced-learning ">PhD in E-Research and Technology Enhanced Learning with Lancaster University.</a></p>
-
-        </div>
-
-      </div>
-
-      <button class="accordion" id="research"><i class="fas fa-bookmark"></i> My Research</button>
-
-      <div class="panel">
-
-        <div class="panel-inner">
-
-          <hr>
-
-          <div class="text-center mb-4">
-
-            <h4>2015</h4>
-
-          </div>
-
-          <div class="mt-3">
-
-            <h5>Workshop Facilitator</h5>
-
-          </div>
-
-          <p class="MsoNormal"> Feb 2015, Teaching and Learning Conference, Blackpool and the Fylde College, Blackpool, 23rd February 2015. A workshop which introduced new staff to evolving technologies involved in improving student engagement in the classroom.</p>
-
-          <div class="mt-3">
-
-            <h5>Conference</h5>
-
-          </div>
-
-          <div class="row">
-
-            <div class="col-sm">
-
-              <div class="mt-3">
-
-                <p class="MsoNormal">Feb 2015, Enhancing Student Participation in Computing, Annual Teaching and Learning Conference, Blackpool and the Fylde College, Blackpool, 22nd February 2016. Presented a workshop on potential ways to enhance student participation.</p>
-
-              </div>
-
+<body>
+
+    <!--==========================
+  Header
+  ============================-->
+    <header id="header" class="fixed-top">
+        <div class="container">
+
+            <div class="logo float-left">
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+                <a href="#intro" class="scrollto"><span class="header-logo">Colette Mazzola</span></a>
             </div>
 
-            <div class="col-sm text-center">
+            <nav class="main-nav float-right d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="#intro">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Awards</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#portfolio">Media</a></li>
 
-              <div class="mb-4">
+                    <li><a href="#testimonials">Reccomendations</a></li>
+                    <li><a href="http://blog.cmaz.co.uk">Blog</a></li>
 
-                <iframe width="300" height="250" src="https://www.youtube.com/embed/uDRc6wou0Jw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-              </div>
+                    <li><a href="#contact">Contact
+                        </a></li>
+                </ul>
+            </nav><!-- .main-nav -->
 
+        </div>
+    </header><!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <section id="intro" class="clearfix">
+        <div class="container">
+
+            <div class="intro-img">
+                <img src="" alt="" class="img-fluid">
             </div>
 
-          </div>
-
-          <div class="mt-3">
-
-            <h5>Workshop Facilitator</h5>
-
-          </div>
-
-          <p class="MsoNormal">Jul 2015, Scholarship Symposium, Blackpool and the Fylde College, University Centre, Blackpool, 1st July 2015. Presented a workshop on a variety of differing forms of technology utilised in enhancing learning.</p>
-
-          <div class="mt-3">
-
-            <h5>Demonstration</h5>
-
-          </div>
-
-          <p class="MsoNormal"> Sep 2015, Adobe Train the Trainer [Online Course], Adobe, July - September 2015. A course which gave effective, approachable and engaging tips for using Adobe products in education.</p>
-
-          <hr>
-
-          <div class="text-center mb-4">
-
-            <h4>2016</h4>
-
-          </div>
-
-          <div class="mt-3">
-
-            <h5>Academic Paper</h5>
-
-          </div>
-
-          <p class="MsoNormal">Mazzola, C. (2016). Putting the Audio into Feedback: Implementing and evaluating the efficiency of audio feedback for Level 4 Computing students, Blackpool and The Fylde College Scholarship Review, Blackpool and the Fylde College.</p>
-
-          <hr>
-
-          <div class="text-center mb-4">
-
-            <h4>2017</h4>
-
-          </div>
-
-          <div class="row">
-
-            <div class="col-sm">
-
-              <div class="mt-3">
-
-                <h5>Poster Presention</h5>
-
-              </div>
-
-              <p class="MsoNormal"> Feb 2017, Higher Education Academy STEM Conference 2017 - Achieving Excellence in Teaching and Learning, Manchester Conference Centre, Manchester, 1st - 2nd February 2017. Presented action research on using the flipped approach in Computing.<a href="https://www.heacademy.ac.uk/knowledge-hub/stem-conference-2017-poster-abstracts"> HEA Abstract </a></p>
-
-            </div>
-
-            <div class="col-sm"> <a href="images/Finished%20HEA%20Poster%20Colette%20Mazzola.png" target="_blank"> <img src="images/Finished%20HEA%20Poster%20Colette%20Mazzola.png" width="500" height="300"></a> </div>
-
-          </div>
-
-          <div class="mt-3">
-
-            <h5>Academic Paper</h5>
-
-          </div>
-
-          <p class="MsoNormal"> Mazzola, C. (2017). Investigating the efficacy and efficiency of a flipped classroom approach, embedding learning technologies in Computing, Blackpool and the Fylde College Scholarship Review, Blackpool and the Fylde College.</p>
-
-          <div class="row">
-
-            <div class="col-sm">
-
-              <div class="mt-3">
-
-                <h5>Poster Presention</h5>
-
-              </div>
-
-              <p class="MsoNormal"> Sept 2017, Association For Learning Technology, Beyond islands of innovation - how Learning Technology became the new norm(al) 5 to 7 September 2017, University of Liverpool, UK Tuesday and Wednesday attendance Sept 5 & 6th, Poster presented research on using the flipped approach in Computing.</p>
-
-            </div>
-
-            <div class="col-sm"> <a href="images/ALT%20Poster%20Complete.png" target="_blank"> <img src="./images/ALT%20Poster%20Complete.png" width="300" height="500"></a> </div>
-
-          </div>
-
-          <hr>
-
-          <div class="text-center mb-4 mt-3">
-
-            <h4>2018</h4>
-
-          </div>
-
-          <div class="row">
-
-            <div class="col-sm">
-
-              <div class="mt-3">
-
-                <h5>Conference Speaker</h5>
-
-              </div>
-
-              <p class="MsoNormal">Conference Speaker: Feb 2018, Higher Education Academy STEM Conference 2018: Creativity in Teaching, Learning and Student Engagement. Centre of Life, Newcastle upon Tyne, Newcastle, 31st – 2nd February 2018. Presented a workshop on investigating student engagement and student perceptions of an active-flipped approach in Computing. <a href="https://www.heacademy.ac.uk/knowledge-hub/flip-or-not-flip-stem-conference-2018">Web Article</a></p>
-
-            </div>
-
-            <div class="col-sm">
-
-              <iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="300" height="250" src="https://prezi.com/embed/hl4c-jp9g0vv/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0U3JvWkhndFpvR2VYTDRwSkYrUWIzV1FRPT0&amp;landing_sign=SukNk-oysO48mb1gohBANHpm5dHGQXlp-mqzeUUEggE"></iframe>
-
-            </div>
-
-          </div>
-
         </div>
-
-      </div>
-
-      
-
-      <!--******** Awards & Accolades *******\-->
-
-      
-
-      <button class="accordion" id="awards"> <i class="fas fa-graduation-cap"></i> Awards & Accolades </button>
-
-      <div class="panel">
-
-        <div class="panel-inner"> <a href="https://courses.hud.ac.uk/full-time/postgraduate/technology-enhanced-learning-and-innovation-ma">
-
-          <p>MSc Technology Enhanced Learning @ Huddersfeild University </p>
-
-          </a> <a href="https://www.blackpool.ac.uk">
-
-          <p>Professional Graduate Certificate in Education @ Blackpool and The Fylde College </p>
-
-          </a> <a href="https://www.blackpool.ac.uk">
-
-          <p>1st Class BSc (Hons) Interaction Design @ Blackpool and The Fylde College</p>
-
-          </a> <a href="https://www.heacademy.ac.uk/individuals/fellowship">
-
-          <p>Fellow of the HEA</p>
-
-          </a>
-
-          <p>Presented at local and national conferences all over the UK</p>
-
-          <p>Achieved the Excellence in Business Innovation Awards 2016 - 2017 @ Blackpool and The Fylde College</p>
-
-          <p>Achieved the Excellence in Business Innovation Awards 2017 - 2018 @ Blackpool and The Fylde College</p>
-
-          <p><a href="https://www.blackpoolgazette.co.uk/news/business/fylde-coast-college-awards-hail-innovation-1-8369480">The Gazette Article for the Excellence in Business Innovation Awards</a>
-
-          <p><a href="https://www.fenews.co.uk/press-releases/17191-record-number-of-b-fc-students-invited-to-present-at-prestigious-undergraduate-research-conference">The Gazette Article for the British Conference Undergraduate Research </a> </p>
-
-        </div>
-
-      </div>
-
-      <button class="accordion" id="interests"><i class="fas fa-mouse-pointer"></i> Current Research Interests </button>
-
-      <div class="panel">
-
-        <div class="panel-inner">
-
-          <p>The efficacy and efficiency of a flipped classroom approach. </p>
-
-          <p>The impact on the student experience of using audio feedback. </p>
-
-          <p>Using Skype and Google Drive for real-time collaboration.</p>
-
-          <p>Online discussion boards and The Online Disinhibition Effect.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!--********END********\-->
-
-
-
-<div class="parallax"></div>
-
-<section id="media" class="section-padding">
-
-  <div class="container">
-
-    <div class="mb-4">
-
-      <div class="section-title text-uppercase"> <i class="fas fa-image"></i> Media </div>
-
-    </div>
-
-    <!--Youtube videos -->
-
-    <div class="youtube-videos">
-
-      <div class="row">
-
-        <div class="col-sm-4"> <br>
-
-          <iframe style="width:100%" height="275px" src="https://www.youtube.com/embed/sFZ1AlTMueg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-        </div>
-
-        <div class="col-sm-4"> <br>
-
-          <iframe style="width:100%" height="275px" src="https://www.youtube.com/embed/uDRc6wou0Jw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-        </div>
-
-        <div class="col-sm-4"> <br>
-
-          <iframe style="width:100%" height="275px" src="https://www.youtube.com/embed/C5yymQCL5Co" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <br>
-
-    <!--//YOUTUBE VIDEOS-->
-
-    <div class="row">
-
-      <div class="container">
-
-        <div class="col-lg-9 mx-auto">
-
-          <div id="mediaCarousel" class="carousel slide" data-ride="carousel">
-
-            <ol class="carousel-indicators">
-
-              <li data-target="#mediaCarousel" data-slide-to="0" class="active"></li>
-
-              <li data-target="#mediaCarousel" data-slide-to="1"></li>
-
-              <li data-target="#mediaCarousel" data-slide-to="2"></li>
-
-              <li data-target="#mediaCarousel" data-slide-to="3"></li>
-
-              <li data-target="#mediaCarousel" data-slide-to="4"></li>
-
-              <li data-target="#mediaCarousel" data-slide-to="5"></li>
-
-              <li data-target="#mediaCarousel" data-slide-to="6"></li>
-
-              <li data-target="#mediaCarousel" data-slide-to="7"></li>
-
-            </ol>
-
-            <div class="carousel-inner" role="listbox">
-
-              <div class="carousel-item active"> <img src="./images/HEA1.png" alt="EBS Awards" class="w-100">
-
-                <div class="carousel-caption d-none d-md-block">
-
-                  <h3>Higher Education Academy Conference</h3>
-
-                  <p>Newcastle’s Life Science Centre</p>
-
-                  <p class="font-italic">January 2018</p>
+    </section><!-- #intro -->
+
+    <main id="main">
+
+        <!--==========================
+      About Us Section
+    ============================-->
+        <section id="about">
+            <div class="container">
+
+                <header class="section-header">
+                    <h3>About Me</h3>
+                    <p>Hi, I’m Colette, thank you for looking at my website… so here is my story so far…</p>
+                </header>
+
+                <div class="row about-container">
+
+                    <div class="col-lg-6 content order-lg-1 order-2">
+                        <p>
+                            In 2008 I was working as a receptionist in a local hotel in St Anne's On-Sea, I gave birth to a beautiful little girl, I remember thinking …this small bundle of joy is going to depend on me for the rest of my life. I was not the brightest at school, I left with poor GCSE grades but regardless of my past, I still applied to Blackpool and The Fylde College, hoping that it would mark a first step on my career ladder in teaching. I decided that I would enrol on a Computing course, being an adult student, I was worried I wouldn’t fit in, however, I was pleasantly surprised as the course was for only people over 19.
+                        </p>
+                        <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="icon"><i class="fas fa-address-card"></i></div>
+                            <h4 class="title"><a href="">Research Interests </a></h4>
+                            <p class="description">Teachnology Enhanced Learning | Students-as-producers / The 5C's 21st Century Skills </p>
+                        </div>
+
+                        <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="icon"><i class="fa fa-bar-chart"></i></div>
+                            <h4 class="title"><a href="">PhD E-Research & Technology Enhanced Learning</a></h4>
+                            <p class="description">I am keen to disseminate this research in order to create a ritualised community of practice and build a professional social community.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
+                        <img src="img/portfolio/Me.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="row about-extra">
+                
+                    <div class="col-lg-12 wow fadeInUp pt-5 pt-lg-0">
+                        <p>
+                            I successfully completed my level 3 qualification and progressed onto the Interactive Media development degree that was offered as a path for progression. The course beyond challenged me but only further confirmed that I wanted to pursue a career in Interactive Media Development. Throughout my time on my courses, the tutors were helpful to me; I began to see them more as friends than just tutors and knew that this was the department that I wanted to have a career in.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row about-extra">
+                    <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+                        <img src="img/One.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+                        <p>In 2016 I achieved the status of HEA Fellow for my evidence and reflection of work in higher education</h4>
+                        <p>
+                            This recognition gave me motivation to push myself and I decided to apply for a Master’s in Technology Enhanced Learning with Huddersfield University. This course was great for me as I was working fulltime and I only had to attend four taught sessions per year, these sessions were delivered on a Saturday making it alit more flexible for me to learn.
+                        </p>
+                        <p>
+                            After achieving my MSc. I secured a Senior Tutor for Teaching and Learning position in Computing at Blackpool and the Fylde College. This has inspired me to sign up to a new challenge, I am now studying towards a PhD in E-Research and Technology Enhanced Learning with Lancaster University.
+                        </p>
+                    </div>
 
                 </div>
 
-              </div>
-
-              <div class="carousel-item"> <img src="./images/HEA2.png" alt="EBS Awards" class="w-100">
-
-                <div class="carousel-caption d-none d-md-block">
-
-                  <h3>Higher Education Academy Conference</h3>
-
-                  <p>Newcastle’s Life Science Centre</p>
-
-                  <p class="font-italic">January 2018</p>
-
-                </div>
-
-              </div>
-
-              <div class="carousel-item "> <img src="./images/HEA3.png" alt="EBS Awards" class="w-100">
-
-                <div class="carousel-caption d-none d-md-block">
-
-                  <h3>Higher Education Academy Conference</h3>
-
-                  <p>Newcastle’s Life Science Centre</p>
-
-                  <p class="font-italic">January 2018</p>
-
-                </div>
-
-              </div>
-
-              <div class="carousel-item "> <img src="./images/HEA4.png" alt="EBS Awards" class="w-100">
-
-                <div class="carousel-caption d-none d-md-block">
-
-                  <h3>Higher Education Academy Conference</h3>
-
-                  <p>Newcastle’s Life Science Centre</p>
-
-                  <p class="font-italic">January 2018</p>
-
-                </div>
-
-              </div>
-
-              <div class="carousel-item "> <img src="./images/Award1%20EBI.png" alt="EBS Awards" class="w-100">
-
-                <div class="carousel-caption d-none d-md-block">
-
-                  <h3>Excellence in Business Innovation Awards</h3>
-
-                  <p>Blackpool and The Fylde College</p>
-
-                  <p class="font-italic">Excellence in Reserch and Scholarly Activity (2016 - 2017)</p>
-
-                </div>
-
-              </div>
-
-              <div class="carousel-item "> <img src="./images/Award2%20EBI.png" alt="EBS Awards" class="w-100">
-
-                <div class="carousel-caption d-none d-md-block">
-
-                  <h3>Excellence in Business Innovation Awards</h3>
-
-                  <p>Blackpool and The Fylde College</p>
-
-                  <p class="font-italic">Excellence in Reserch and Scholarly Activity (2017 - 2018)</p>
-
-                </div>
-
-              </div>
-
-              <div class="carousel-item "> <img src="./images/Award3%20EBI.png" alt="EBS Awards" class="w-100">
-
-                <div class="carousel-caption d-none d-md-block">
-
-                  <h3>Excellence in Business Innovation Awards</h3>
-
-                  <p>Blackpool and The Fylde College</p>
-
-                  <p class="font-italic">Excellence in Reserch and Scholarly Activity (2017 - 2018)</p>
-
-                </div>
-
-              </div>
-
-              <div class="carousel-item "> <img src="./images/Validation.png" alt="Validation" class="w-100">
-
-                <div class="carousel-caption d-none d-md-block">
-
-                  <h3>Vaidation Team </h3>
-
-                  <p>Blackpool and The Fylde College</p>
-
-                  <p class="font-italic">Web Technologies and Digital Media (2017 - 2018)</p>
-
-                </div>
-
-              </div>
-
             </div>
-
-            <a class="carousel-control-prev" href="#mediaCarousel" role="button" data-slide="prev"> <i class="fa fa-angle-left carousel-controls"></i> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#mediaCarousel" role="button" data-slide="next"> <i class="fa fa-angle-right carousel-controls"></i> <span class="sr-only">Next</span> </a> </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!--********Education and Study ********\-->
-
-
-
-<div class="parallax2"></div>
-
-<section id="timeline" class="section-padding">
-
-<div class="section ">
-
-  <div id="edu">
-
-  <div class="container">
-
-    <div class="section-title text-uppercase"> <i class="fas fa-user"></i> Education and Study </div>
-
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-sm ">
-
-    
-
-          <div>
-
-            <time><i class="fas fa-briefcase"></i> 2013 - Present </time>
-
-            Lecturer <br>
-
-            Blackpool and The Fylde College <br>
-
-            Computing Department </div>
-
-          <div>
-
-            <time><i class="fas fa-briefcase"></i> 2017  - Present </time>
-
-            Senior Tutor (Learning and Teaching) <br>
-
-            Blackpool and The Fylde College <br>
-
-            Computing Department </div>
-
-          <div>
-
-            <time><i class="fas fa-briefcase"></i> 2017  - Present </time>
-
-            Progamme Leader <br>
-
-            FdSc./ BSc.Web Technologies and Digital Media <br>
-
-            Blackpool and The Fylde College <br>
-
-            Computing Department </div>
-
-        </div>
-
-        <div class="col-sm">
-
-    
-
-            <div>
-
-            <time><i class="fas fa-graduation-cap"></i> 2010-2013</time>
-
-            BSc. Interaction Desing (Media) <br>
-
-            Blackpool and The Fylde College <br>
-
-            Lancaster University </div>
-
-          <div>
-
-            <time><i class="fas fa-graduation-cap"></i> 2014-2015</time>
-
-            PGCE <br>
-
-            Blackpool and The Fylde College <br>
-
-            Lancaster University </div>
-
-          <div>
-
-            <time><i class="fas fa-graduation-cap"></i> 2015-2017</time>
-
-            MSc. Technology Enhanced Learning <br>
-
-            Hudderfield University <br>
-
-          </div>
-
-          <div>
-
-            <time><i class="fas fa-graduation-cap"></i> 2018--> </time>
-
-            PhD.Technology Enhanced Learning and E-Research <br>
-
-            Lancaster University </div>
-
-
-
-        </div>
-
-<div class="img-logo">
-
-   <p><img src="./images/BnFC.png" height="75" width="150"> </p>
-
-   <p><img src="./images/lancs.png" height="75" width="150"></p>
-
-   <p><img src="./images/hud.png" height="75" width="150"></p>
-
-</div>
-
-
-
-
-
-
-
-      </div>
-
-    </div>
-
-  </div>
-
- </div>
-
-</div>
-
-  <!--  
-
- <div class="img-container">
-
-      <div class="row">
-
-        <div class="col-sm text-center">
-
-            <img src="images/BnFC.png" height="100px" width="150px">  
-
-           </div>
-
-            <div class="col-sm text-center">
-
-            <img src="images/hud.png" height="100px" width="150px">
-
+        </section>
+        <!-- #about -->
+
+
+
+        <!--==========================
+      Services Section
+    ============================-->
+        
+    <section id="services" class="section-bg">
+            <div class="container">
+
+                <header class="section-header">
+                    <h3>Awards & Accolades</h3>
+                    <p>These are the awards and accolades that I have achieved, on my academic journey. </p>
+                </header>
+
+                <div class="row">
+                        <div class="box">
+                        <h3>2020</h3>
+                            <h4 class="title"><a href="">Nominated Educate North Awards - Teaching Excellence Award 2020</a></h4>
+                            <h4 class="title"><a href="https://sway.office.com/qGv77d4A6nsb1VsU?ref=Link">DigiLearn Co-ordinator 2020</a></h4>
+                        <h3>2019</h3>
+                            <h4 class="title"><a href="">MIE Master Trainer 2019</a></h4>
+                            <h4 class="title"><a href="">MIE Expert 2019</a></h4>
+                            <h4 class="title"><a href="">Speaker at EDULEARN (Spain)2019 </a></h4>
+                        <h3>2018</h3>
+                             <h4 class="title"><a href="">Highly Commended For Excellence in Learning and Teaching 2018</a></h4>
+                             <h4 class="title"><a href="http://blog.cmaz.co.uk/post.php?id=71">Conference Speaker 2018 </a></h4>
+                        <h3>2017</h3>
+                             <h4 class="title"><a href="">Fellow of the HEA </a></h4>
+                    </div>
+                </div>
             </div>
+        </section>
+        
+    <!-- #services -->
 
-            <div class="col-sm text-center">
+  <!--==========================
+      Why Us Section
+    ============================-->
 
-            <img src="images/Lancaster.png" height="100px" width="150px">  
+        <section id="timeline" class="clearfix">
+            <div class="container">
 
+                <header class="section-header"><br><br>
+                    <h3 class="section-title">Timeline</h3>
+                </header>
+
+                <div class="timeline-container">
+                    <div class="timeline-inner">
+                        <div class="experience">
+                            <div class="timeline-heading">
+                                Experience
+                            </div>
+                            <hr>
+                            <div class="wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                                <div class="box">
+
+
+                                    <div class="place">
+                                        <div class="place-title">
+                                            Blackpool and The Fylde College
+                                        </div>
+                                        <div class="time-at">5 Years 3 Months</div>
+
+                                        <div class="position">
+                                            <div class="bullet"></div>
+                                            <div class="title">
+                                                Senior Tutor (Learning and Teaching)
+                                            </div>
+                                            <div class="timeline-description">
+                                                <div class="dates">
+                                                    <span class="form">Dec 2016</span> - <span class="to">present</span>
+                                                    (<span class="ammount">2 year 4 months</span>)
+                                                </div>
+                                                <div class="desc-content">
+                                                    The delivery and management of Student Learning within the curriculum
+                                                    area.
+                                                    <ul>
+                                                        <li>Act as mentor for new teachers in the area of teaching and learning.</li>
+                                                        <li>Contribute to staff development within the School in teaching and learning.</li>
+                                                        <li>To disseminate good practice.</li>
+                                                        <li>Develop and use a range of teaching and learning techniques.
+                                                        </li>
+                                                        <li>Maintain and improve the quality of the School’s work within
+                                                            the and improve the quality of the School’s work within the College’s policies and procedures relating to teaching and learning.</li>
+
+                                                        <li>
+                                                            The delivery and management of Student Learning within the curriculum area.
+                                                        </li>
+                                                        <li>
+                                                            Carry out teaching observations and give appropriate feedback.
+                                                        </li>
+                                                        <li>
+                                                            Participate in internal audits/inspections of teaching and learning.
+                                                        </li>
+                                                        <li>
+                                                            Support the development of Equal Opportunities within teaching and learning.
+                                                        </li>
+                                                        <li>
+                                                            Work collaboratively across the college.
+                                                        </li>
+                                                        <li>
+                                                            Assist with the annual School self-assessment exercise in order to monitor and evaluate School performance.
+                                                        </li>
+                                                        <li>
+                                                            Work collaboratively across the college.
+                                                        </li>
+                                                        <li>
+                                                            Assist with monitoring student recruitment, retention and achievement and take remedial action where necessary.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="position">
+
+                                            <div class="bullet"></div>
+
+                                            <div class="title">
+                                                Programme Leader (FdSc./BSc. Interactive Media Development & Web
+                                                Technologies and Digital Media)
+                                            </div>
+
+                                            <div class="timeline-description">
+                                                <div class="dates">
+                                                    <span class="form">Sep 2016</span> - <span class="to">present</span>
+                                                    (<span class="ammount">3 year 7 months</span>)
+                                                </div>
+                                                <div class="desc-content">
+                                                    As a programme leader I am ultimately responsible for academic
+                                                    leadership, management and assessment, of the programme that I am
+                                                    designated to lead.
+                                                    <p>
+                                                        Working closely with the relative module leaders and the course tutors,
+                                                        I am responsible responding to feedback from students, external examiners, Professional, Statutory and Regulatory Bodies (PSRBs) and industry. I am required to ensure student representatives are allocated to the programme board, and that all students have access to a personal tutor. I have good communication with colleagues across the university and collaborative partners, and with external bodies.</p>
+
+                                                    <p>Further to this I was invited to attend the Education Technology Development Group which looks to connect new ideas and technology and identify the most effective and efficient methods of including these in everyday teaching practice. Working as part of Blackpool and The Fylde Colleges’ technology team is a great opportunity and will allow collaboration of research projects with professionals in other departments. More recently my scholarly research has been published internally at Blackpool and The Fylde College in the scholarship review 2016; this research has additionally been submitted to the Research in Learning Technology for consideration for publication.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="position">
+
+                                            <div class="bullet"></div>
+
+                                            <div class="title">
+                                                Lecturer
+                                            </div>
+
+                                            <div class="timeline-description">
+                                                <div class="dates">
+                                                    <span class="form">Dec 2012</span> - <span class="to">present</span>
+                                                    (<span class="ammount">1 year 3 months</span>)
+                                                </div>
+                                                <div class="desc-content">
+                                                    As a Higher education (HE) and Further education lecturer I teach academic and vocational subjects to undergraduate and postgraduate students aged 16 upwards.
+                                                    I Teach methods include lectures, seminars, tutorials, practical demonstrations, field work and e-learning. Multimedia technologies are increasingly used.
+
+                                                    <p>
+                                                        As a HE/ FE lecturer I pursue my own research to contribute to the wider research activities of my department. My aim is to have my scholarship published externally in books or scholarly articles. My academic practice and scholarly research (which typically investigates using technology to improve the student experience) has included contributing to a variety of Blackpool and The Fylde College conferences. At the Second Annual Learning and Teaching Conference in 2015 (Scholarship Informed Teaching and Learning) I presented a workshop that demonstrated good practice in using collaborative environments to enhance student participation. Additionally I contributed to Blackpool and The Fylde Colleges’ Third Annual Learning and Teaching Conference (Technology Enabled and Enhanced Learning) where I presented my research into pedagogies that can assist technology enhanced learning.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                            <div class="box">
+                                <div class="education">
+                                    <div class="timeline-heading">
+                                        Education
+                                    </div>
+                                    <hr>
+                                    <div class="place">
+
+                                        <div class="position">
+
+                                            <div class="bullet"></div>
+
+                                            <div class="title">
+                                                Doctor of Philosophy - PhD E-research & Technology Enhanced Learning
+
+                                            </div>
+
+                                            <div class="timeline-description">
+                                                <div class="dates">
+                                                    <span class="form">2018</span> - <span class="to">2022</span>
+
+                                                </div>
+                                                <div class="desc-content">
+                                                    This Programme in E-Research and Technology Enhanced Learning will
+                                                    provide you with training in research methodologies, expose you to key
+                                                    literature that will enable you to link cutting edge learning theories
+                                                    with your professional
+                                                    practice as well as providing you with a period of intensive, individual
+                                                    research that is supervised by an expert in the field leading to a PhD
+                                                    in E-Research and Technology Enhanced
+                                                    Learning. This PhD doctoral programme is designed specifically for
+                                                    professionals, for people who
+                                                    wish to study to an advanced level and carry out a piece of research of
+                                                    the highest possible standard in an aspect of their professional
+                                                    practice.<br />
+
+                                                    The programme in E-Research and Technology Enhanced Learning builds on
+                                                    the expertise of the members of the Centre for Technology Enhanced
+                                                    Learning in the Department of Educational Research and their long
+                                                    experience in running Masters
+                                                    Degrees in advanced learning technologies and networked e-learning.
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="position">
+
+                                            <div class="bullet"></div>
+
+                                            <div class="title">
+                                                Master of Science Technology Enhanced Learning
+
+                                            </div>
+
+                                            <div class="timeline-description">
+                                                <div class="dates">
+                                                    <span class="form">2015</span> - <span class="to">2017</span>
+
+                                                </div>
+                                                <div class="desc-content">
+                                                    Technology is increasingly a key element in effective education and
+                                                    training. The web, mobile devices, interactive white boards, Virtual
+                                                    Learning Environments, blogging, wikis and email are tools that may be
+                                                    used in teaching. But how effective are they
+                                                    at supporting learning? New pedagogical models such as massively open
+                                                    online courses (MOOCs), learning analytics where data is used to analyse
+                                                    and improve learning, and rhizomatic learning are all explained and
+                                                    critically examined.
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="position">
+
+                                            <div class="bullet"></div>
+
+                                            <div class="title">
+                                                PGCE
+                                            </div>
+
+                                            <div class="timeline-description">
+                                                <div class="dates">
+                                                    <span class="form">2015</span> - <span class="to">2015</span>
+
+                                                </div>
+                                                <div class="desc-content">
+                                                    The areas that were studied, Curriculum Development and Educational
+                                                    Change, Action Research for Change and Innovation, Developing Teaching
+                                                    Learning and Assessment, Introduction to Teaching Learning and
+                                                    Assessment, Wider Professional Practice and
+                                                    Developing Coaching and Mentoring.
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="position">
+
+                                            <div class="bullet"></div>
+
+                                            <div class="title">
+                                                Bachelors of Science (Interaction Design)
+
+                                            </div>
+
+                                            <div class="timeline-description">
+                                                <div class="dates">
+                                                    <span class="form">2010</span> - <span class="to">2013</span>
+
+                                                </div>
+                                                <div class="desc-content">
+                                                    The areas that were studied, 3D Generated Graphics, Interactive Media
+                                                    Marketing and Business, Dynamic Web Development, Programming Interactive
+                                                    Assets, Work Experience Assessment Report, Mobile Application
+                                                    Development, Project Management,
+                                                    Evolving Media Technologies, Designing and Creating Advanced Websites.
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="col-sm text-center">
 
-            <img src="images/HEALogo.png" height="100px" width="150px" >  
+        <!--==========================
+      Portfolio Section
+    ============================-->
+        <section id="portfolio" class="clearfix">
+            <div class="container">
 
-          </div>
+                <header class="section-header">
+                    <h3 class="section-title">Media</h3>
+                </header>
 
- 
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-hea">HEA</li>
+                            <li data-filter=".filter-ebi">EBI</li>
+                            <li data-filter=".filter-vid">Video</li>
+                        </ul>
+                    </div>
+                </div>
 
-        </div>
+                <div class="row portfolio-container">
 
-    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-ebi">
+                        <div class="portfolio-wrap">
+                            <img src="img/portfolio/Award1%20EBI.png" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4><a href="#">EBI Awards</a></h4>
+                                <p>App</p>
+                                <div>
+                                    <a href="img/portfolio/Award1%20EBI.png" data-lightbox="portfolio" data-title="EBI Awards" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-ebi" data-wow-delay="0.1s">
+                        <div class="portfolio-wrap">
+                            <img src="img/portfolio/Award3%20EBI.png" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4><a href="#">EBI Awards</a></h4>
+                                <p>Web</p>
+                                <div>
+                                    <a href="img/portfolio/Award3%20EBI.png" class="link-preview" data-lightbox="portfolio" data-title="EBI Awards" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
--->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-ebi" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <img src="img/portfolio/Award2%20EBI.png" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4><a href="#">EBI Awards</a></h4>
+                                <p>App</p>
+                                <div>
+                                    <a href="img/portfolio/Award2%20EBI.png" class="link-preview" data-lightbox="portfolio" data-title="EBI Awards" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="parallax5"></div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-hea">
+                        <div class="portfolio-wrap">
+                            <img src="img/portfolio/HEA4.png" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4><a href="#">HEA Conference</a></h4>
+                                <p>Card</p>
+                                <div>
+                                    <a href="img/portfolio/HEA4.png" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-<!--******************Recomendations***************
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-hea" data-wow-delay="0.1s">
+                        <div class="portfolio-wrap">
+                            <img src="img/portfolio/HEA1.png" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4><a href="#">HEA Conference</a></h4>
+                                <p>Web</p>
+                                <div>
+                                    <a href="img/portfolio/HEA1.png" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <!--This creates an ID and anchor point so that when Timeline is clicked, the page scrolls to this point-->
-<section id="recommendations" class="bg-light mb-5">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-hea" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <img src="img/portfolio/HEA2.png" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4><a href="#">HEA Conference</a></h4>
+                                <p>App</p>
+                                <div>
+                                    <a href="img/portfolio/HEA2.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-  <div class="container">
 
-    <div class="row">
 
-      <div class="col-lg-12 mx-auto">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.1s">
+                        <div class="portfolio-wrap">
+                            <a><iframe src="https://www.youtube.com/embed/sFZ1AlTMueg" width="380" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe></a>
+                            <div class="portfolio-info">
+                                <h4><a href="#">Reflection</a></h4>
+                                <p>Reflection</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class=" mb-">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <iframe src="https://www.youtube.com/embed/uDRc6wou0Jw" width="380" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe>
+                            <div class="portfolio-info">
+                                <h4><a href="#">Technology Enabled and Enhanced Learning</a></h4>
+                                <p>Web</p>
+                            </div>
+                        </div>
+                    </div>
 
-  <div class="section-title text-uppercase"> <i class="fas fa-comments"></i> Recommendations </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <iframe src="https://www.youtube.com/embed/B5lgQ3PpcpQ" width="380" height="156" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe>
+                            <div class="portfolio-info">
+                                <h4><a href="#">Fit For Purpose</a></h4>
+                                <p>Web</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <iframe src="https://www.youtube.com/embed/5oSwjwKq3Ic" width="380" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe>
+                            <div class="portfolio-info">
+                                <h4><a href="#">Bring Your Own Device</a></h4>
+                                <p>Web</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <iframe src="https://www.youtube.com/embed/C5yymQCL5Co" width="380" height="156" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe>
+                            <div class="portfolio-info">
+                                <h4><a href="#">The Active-Flipped Approach</a></h4>
+                                <p>Web</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <iframe width="380" height="210" src="https://www.youtube.com/embed/VxLJKhf4rlA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe>
+                            <div class="portfolio-info">
+                                <h4><a href="#">Student Feedback</a></h4>
+                                <div>
 
-  <div class="container">
-</br>
-<div class="card text-center">
-  <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
- 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- #portfolio -->
 
-    <?php
+        <!--==========================
+      Clients Section
+    ============================-->
+        <section id="testimonials" class="section-bg">
+            <div class="container">
+
+                <header class="section-header">
+                    <h3>Reccomendations</h3>
+                </header>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+
+                        <div class="owl-carousel testimonials-carousel wow fadeInUp">
+
+                            <?php
 
     $db = new mysqli("jordanrandles.co.uk", "admin_mazzola", "SuperSecretPassword", "admin_mazzola");
 
     $query = $db->query("SELECT * FROM `recommendations`");
+                            
+                             echo "<script>var recCount = ".$query->num_rows."</script>";
 
     if($query->num_rows > 0){
-    echo "<script>var recCount = ".$query->num_rows."</script>";
+   
 
         while($row = $query->fetch_assoc()){
 
@@ -845,12 +722,15 @@
 
 
             echo <<<END
-            <li class="nav-item">
-                <div class="rec-tab active" data="$id">
-                      <a class="nav-link " href="#recommendations">$name</a>
-                </div>
-            </li>
-
+            <div class="testimonial-item">
+                    <img src="$image" class="testimonial-img" alt="">
+                        <h3>$name</h3>
+                        <h4>$subheading</h4>
+                                <p>
+                                $message
+                                </p>
+                            </div>
+                            
 END;
 
         };
@@ -862,217 +742,206 @@ END;
     };
 
 ?>
-       
-    </ul>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title"></h5>
-    <div class="row">
-      <div class="col-6">
-    <div class="rec-image-container">
-      <img id="rec--image" src="" alt="recommendation image" style="border-radius:100px;width:200px;"/>
-      <div id="rec--date"></div>
-       <div id="rec--heading"></div>
-    </div>
-    </div> 
-    <div class="col-6">
-    <div class="section-title text-left"><h4> <span id="rec--name"></h4></span></div>
+                        </div>
 
-    <p class="card-text text-justify"><span id="rec--message"></span></p>
-  </div>
-</div>
-</div>
-
-</div>
-</div>
-</section>
+                    </div>
+                </div>
 
 
+            </div>
+        </section><!-- #testimonials -->
 
-<div class="parallax3"></div>
 
+        <!--==========================
+      Clients Section
+    ============================-->
+        <section id="clients" class="section-bg">
 
+            <div class="container">
 
-<section id="contact" class="bg-light mb-5">
+                <div class="section-header">
+                    <h3>Associations </h3>
+                    <p>Please find below a few of my associations. </p>
+                </div>
 
-  <div class="container">
+                <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
 
-    <div class="row">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="client-logo">
+                            <img src="img/clients/client-1.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
 
-      <div class="col-lg-12 mx-auto">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="client-logo">
+                            <img src="img/clients/client-2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
 
-        <div class=" mb-">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="client-logo">
+                            <img src="img/clients/client-3.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
 
-          <div class="section-title text-uppercase"> <i class="fas fa-phone"></i> Contact </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="client-logo">
+                            <img src="img/clients/client-4.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
 
-        </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="client-logo">
+                            <img src="img/clients/client-5.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
 
-        <div class="contact-form-container">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="client-logo">
+                            <img src="img/clients/client-6.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
 
-          <form name="contact" id="contact">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="client-logo">
+                            <img src="img/clients/client-7.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
 
-            <div class="row">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="client-logo">
+                            <img src="img/clients/client-8.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
 
-              <div class="col-sm">
-
-                <input type="text" class="form-control" placeholder="Name" name="name" id="name">
-
-              </div>
-
-              <div class="col-sm">
-
-                <input type="text" class="form-control" placeholder="Email Address" name="email" id="email">
-
-              </div>
-
-              <div class="col-sm">
-
-                <input type="text" class="form-control" placeholder="Subject" name="subject" id="subject">
-
-              </div>
+                </div>
 
             </div>
 
-            <div class="row">
+        </section>
 
-              <div class="col-sm">
+        <!--==========================
+      Contact Section
+    ============================-->
+        <section id="contact" class="container">
+            <div class="container-fluid">
 
-                <textarea class="form-control contact-message" placeholder="Message..." name="message" id="message"></textarea>
+                <div class="section-header">
+                    <h3>Contact Us</h3>
+                </div>
 
-              </div>
+                <div class="row wow fadeInUp">
+
+                    <div class="col-lg-6">
+                        <div class="map mb-4 mb-lg-0">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18872.738129586614!2d-3.0300384398819715!3d53.75224014295786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b410f496bcd9b%3A0x17a7af049e911eed!2sLytham+St+Annes%2C+Lytham+Saint+Annes!5e0!3m2!1sen!2suk!4v1558210807689!5m2!1sen!2suk" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-12 col-md-6 info">
+                                <i class="ion-ios-location-outline"></i>
+                                <p>Lytham St Annes</p>
+                            </div>
+                            <div class="col-12 col-md-6 info">
+                                <i class="ion-ios-email-outline"></i>
+                                <p>colette.mazzol@blackpool.ac.uk</p>
+                            </div>
+                            <div class="col-12 col-md-6 info">
+                                <i class="ion-ios-telephone-outline"></i>
+                                <p>01253 504121</p>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                            <div id="errormessage"></div>
+                            <form action="" method="post" role="form" class="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                        <div class="validation"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
+        </section><!-- #contact -->
 
-            <div class="pull-left" id="form-messages"> </div>
+    </main>
 
-            <button class="contact-submit pull-right">Send</button>
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer">
 
-          </form>
+        <div class="copyright">
+            &copy; Colette Mazzola <strong>2019</strong> All Rights Reserved <a href="privacy.php"> Privacy </a>
+        </br>
+           <a href="https://www.pinterest.co.uk/colettemazzola/"><img src="img/pinterest.png" style="width:50px; height:50px"></a>
 
+
+           <a href="https://twitter.com/ColetteMazzola">
+             <img src="img/twitter.png" style="width:50px; height:50px">
+         </a>
+
+         <a href="https://www.linkedin.com/in/colette-mazzola-msc-81a6639a/">
+              <img src="img/linkedin.png" style="width:50px; height:50px">
+            </a>
+
+
+            <div class="credits">
+                <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+        -->
+            </div>
         </div>
+    </footer><!-- #footer -->
 
-      </div>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
 
-    </div>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
 
-  </div>
-
-</section>
-
-<!-- Footer -->
-
-<footer class="py-1">
-
-  <div class="container-footer">
-
-    <p class="m-0 text-center">© Copyright 2018 by Colette Mazzola All Rights Reserved.<div class="social-items"> <a href="https://www.youtube.com/channel/UCGfYKft-MvT9OtHQGt3vVMg?view_as=subscriber" target="_blank">
-
-      <div class="footer-social-item"> <i class="fab fa-youtube"></i> </div>
-
-      </a> <a href="https://twitter.com/ColetteMazzola" target="_blank">
-
-      <div class="footer-social-item"> <i class="fab fa-twitter"></i> </div>
-
-      </a> <a href="https://www.pinterest.co.uk/colettemazzola/" target="_blank">
-
-      <div class="footer-social-item"> <i class="fab fa-pinterest"></i> </div>
-
-      </a> <a href="https://www.linkedin.com/in/colette-mazzola-81a6639a/" target="_blank">
-
-      <div class="footer-social-item"> <i class="fab fa-linkedin"></i> </div>
-
-      </a> <a href="https://www.instagram.com/colettemazzola29/" target="_blank">
-
-      <div class="footer-social-item"> <i class="fab fa-instagram"></i> </div>
-
-      </a> <a href="https://www.facebook.com/colette.mazzola" target="_blank">
-
-      <div class="footer-social-item"> <i class="fab fa-facebook-square"></i> </div>
-
-      </a> 
-
-    </div>
-
-  </div>
-
-  <!-- /.container --> 
-
-</footer>
-
-<!-- Bootstrap core JavaScript --> 
-
-<script src="vendor/jquery/jquery.min.js"></script> 
-
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
-
-<!-- Plugin JavaScript --> 
-
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script> 
-
-<!-- Custom JavaScript for this theme --> 
-
-<script src="js/scrolling-nav.js"></script>
-
-<script type="text/javascript">
-  var activeRec;
-  $('.rec-tab').click(function(){
-    this.id = this.attributes[1].value;
-  
-    $($(activeRec).children()[0]).removeClass('active'); 
-   
-    activeRec = this;
-    $($(this).children()[0]).addClass('active'); 
-    fetch("getRecommendation.php?id="+this.id,{"method":"GET"})
-      .then(response => response.json())
-      .catch(error => console.warn(error))
-      .then(function(response){
-        console.log(response);
-        if('#rec--name'.length > 0){
-          $('#rec--name')[0].innerHTML = response.name;
-        }
-        if('#rec--message'.length > 0){
-          $('#rec--message')[0].innerHTML = response.message;
-        }
-        if('#rec--image'.length > 0){
-          $('#rec--image')[0].src = response.image;
-        }
-        if('#rec--heading'.length > 0){
-          $('#rec--heading')[0].innerHTML = response.heading;
-        }
-          if('#rec--date'.length > 0){
-          $('#rec--date')[0].innerHTML = response.date;
-        }
-      });
-  })
-  this.random = Math.floor(Math.random()*recCount);
-  activeRec = $('.rec-tab')[this.random-1];
-  $($('.rec-tab')[this.random-1].children[0]).addClass('active');
-  fetch("getRecommendation.php?id="+this.random,{"method":"GET"})
-      .then(response => response.json())
-      .catch(error => console.warn(error))
-      .then(function(response){
-        console.log(response);
-        if('#rec--name'.length > 0){
-          $('#rec--name')[0].innerHTML = response.name;
-        }
-        if('#rec--message'.length > 0){
-          $('#rec--message')[0].innerHTML = response.message;
-        }
-        if('#rec--image'.length > 0){
-          $('#rec--image')[0].src = response.image;
-        }
-        if('#rec--heading'.length > 0){
-          $('#rec--heading')[0].innerHTML = response.heading;
-        } 
-              if('#rec--date'.length > 0){
-          $('#rec--date')[0].innerHTML = response.date;
-        }
-      });
-</script>
-
-
-
-
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
 
 </body>
 
