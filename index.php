@@ -189,103 +189,121 @@
                     <h3>Awards & Accolades</h3>
                     <p>These are some awards and accolades that I have achieved, on my academic journey so far... </p>
                 </header>
+                <div class="box">
+                    <div class="row ">
 
-                <div class="">
-                    <div class="box">
-                        <div class="row ">
-                            <div class="col-12 col-md-3 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="img/ENW.png" alt="North Educate Award Logo">
-                                    <div class="card-body">
-                                        <p class="card-text">Teaching Excellence Award
-                                            2020</p>
-                                    </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/EDtech.png" alt="The Lights">
+                                <div class="card-body">
+                                    <a href="http://anchor.fm/edtech-talks">
+                                        The EdTech Talks (2020) </a></p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="img/0.jpg" alt="DigiLearnSector Logo">
-                                    <div class="card-body">
-                                        <p class="card-text"><a
-                                                href="https://sway.office.com/qGv77d4A6nsb1VsU?ref=Link">DigiLearn
-                                                Co-originator - FE Engagement Lead </a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="img/MIET.png" alt="">
-                                    <div class="card-body">
-                                        <p class="card-text">Microsoft Innovative Educator Trainer </p>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
 
-                            <div class="col-12 col-md-3 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="img/MIE.png" alt="">
-                                    <div class="card-body">
-                                        <p class="card-text">Microsoft Innovative Educator</p>
-                                    </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/Logo.png" alt="The Lights">
+                                <div class="card-body">
+                                    <a href="https://soundcloud.com/colette-mazzola/the-lights-podcast-colette-mazzola">
+                                        The Lights Podcast (2020) </a></p>
                                 </div>
                             </div>
+                        </div>
 
-     <!--==========================
+
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/ENW.png" alt="North Educate Award Logo">
+                                <div class="card-body">
+                                    <p class="card-text">Teaching Excellence Award
+                                        (2020)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/0.jpg" alt="DigiLearnSector Logo">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="https://sway.office.com/qGv77d4A6nsb1VsU?ref=Link"> FE
+                                            Engagement
+                                            Lead (2019) </a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/MIET.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Microsoft Innovative Educator Trainer </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/MIE.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Microsoft Innovative Educator</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==========================
       Hidden Div for more content 
     ============================-->
 
-                            <div class="hiddenawards">
-                                <div class="row">
-
-                                    <div class="col-12 col-md-8 mb-4">
-                                        <div class="card">
-                                            <img class="card-img-top" src="img/5Cs.png" alt=" ">
-                                            <div class="card-body">
-                                                <p class="card-text">Collaborative Framework - 5Cs 21st Century Skills
-                                                    (2020) </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-3 mb-4">
-                                        <div class="card">
-                                            <img class="card-img-top" src="img/ebi.png" alt=" ">
-                                            <div class="card-body">
-                                                <p class="card-text">EBI Award Outstanding use of IT and/or Technology
-                                                    (2019)
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="col-12 col-md-8 mb-4">
-                                        <div class="card">
-                                            <img class="card-img-top" src="img/EDULEARN.jpg" alt="EDULEARN Logo">
-                                            <div class="card-body">
-                                                <p class="card-text">Presenter: EDULEARN (Spain) (2019) 11th
-                                                    International Conference on Education and New Learning Technologies
-                                                    Palma, Spain. 1-3 July, 2019.
-                                                    ISBN: 978-84-09-12031-4 / ISSN: 2340-1117
-                                                    doi: 10.21125/edulearn.2019
-                                                    Publisher: IATED </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-md-3 mb-4">
-                                        <div class="card">
-                                            <img class="card-img-top" src="img/HC.png" alt=" ">
-                                            <div class="card-body">
-                                                <p class="card-text"> Excellence in Learning and Teaching (2018) </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- #HiddenAwards  -->
+                        <div class="col-12 col-sm-12 col-lg-6 mb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/5Cs.png" alt=" ">
+                                <div class="card-body">
+                                    <p class="card-text">Collaborative Framework - 5Cs 21st Century Skills
+                                        (2020) </p>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/ebi.png" alt=" ">
+                                <div class="card-body">
+                                    <p class="card-text">EBI Award Outstanding use of IT and/or Technology
+                                        (2019)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/HC.png" alt=" ">
+                                <div class="card-body">
+                                    <p class="card-text"> Excellence in Learning and Teaching (2018) </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-lg-6 mb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="img/EDULEARN.jpg" alt="EDULEARN Logo">
+                                <div class="card-body">
+                                    <p class="card-text">Presenter: EDULEARN (Spain) (2019) 11th
+                                        International Conference on Education and New Learning Technologies
+                                        Palma, Spain. 1-3 July, 2019.
+                                        ISBN: 978-84-09-12031-4 / ISSN: 2340-1117
+                                        doi: 10.21125/edulearn.2019
+                                        Publisher: IATED </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div> <!-- #HiddenAwards  -->
+                </div>
+            </div>
         </section>
 
-    <!--==========================
+        <!--==========================
       Timeline Section
     ============================-->
 
