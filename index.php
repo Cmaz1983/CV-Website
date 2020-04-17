@@ -865,11 +865,11 @@ END;
                             </div>
                             <div class="col-12 col-md-6 info">
                                 <i class="ion-ios-email-outline"></i>
-                                <p>colette.mazzol@blackpool.ac.uk</p>
+                                <p>cmaz@blackpool.ac.uk</p>
                             </div>
                             <div class="col-12 col-md-6 info">
                                 <i class="ion-ios-telephone-outline"></i>
-                                <p>01253 504121</p>
+                                <p>01253 504453</p>
                             </div>
                         </div>
 
