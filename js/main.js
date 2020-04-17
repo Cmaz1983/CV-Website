@@ -121,3 +121,43 @@
 
 })(jQuery);
 
+$(document).ready(function() {
+
+  let descriptions = $('.desc-content');
+
+  for (var i = 0; i < descriptions.length; i++) {
+      let item = $('.desc-content')[i]
+      let desc = item.innerHTML;
+
+      let pos = 700;
+      let sym = "...";
+
+      let trunc = "";
+
+      let len = desc.length;
+      if (pos == undefined || len <= pos) {
+          trunc = desc;
+      } else {
+          let p1 = desc.slice(0, pos - 3);
+          let p2 = desc.slice(pos - 3);
+          trunc = `
+      <div class="spoiler-${i}">${p1} ${sym}</div>
+      <div class="seemore" data="${i}"><span class="moretext"> See more</span></div>
+      <div class="desc-more-${i}" style="display:none;">${desc}</div>
+      `;
+      }
+
+      item.innerHTML = trunc;
+
+  }
+
+  $('.seemore').on("click", (target) => {
+      let data = $(target)[0].currentTarget.attributes[1].value;
+      let spoiler = ".spoiler-" + data;
+      let all = ".desc-more-" + data;
+
+      $($(target)[0].currentTarget).hide();
+      $(spoiler).hide();
+      $(all).show();
+  })
+})

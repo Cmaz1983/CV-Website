@@ -13,14 +13,16 @@
 
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+        rel="stylesheet">
 
     <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Libraries CSS Files -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -30,56 +32,16 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119319669-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-119319669-1');
-</script>
-
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119319669-1"></script>
     <script>
-        $(document).ready(function() {
+    window.dataLayer = window.dataLayer || [];
 
-            let descriptions = $('.desc-content');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-            for (var i = 0; i < descriptions.length; i++) {
-                let item = $('.desc-content')[i]
-                let desc = item.innerHTML;
-
-                let pos = 700;
-                let sym = "...";
-
-                let trunc = "";
-
-                let len = desc.length;
-                if (pos == undefined || len <= pos) {
-                    trunc = desc;
-                } else {
-                    let p1 = desc.slice(0, pos - 3);
-                    let p2 = desc.slice(pos - 3);
-                    trunc = `
-            <div class="spoiler-${i}">${p1} ${sym}</div>
-            <div class="seemore" data="${i}"><span class="moretext"> See more</span></div>
-            <div class="desc-more-${i} hidden">${desc}</div>
-            `;
-                }
-
-                item.innerHTML = trunc;
-
-            }
-
-            $('.seemore').on("click", (target) => {
-                let data = $(target)[0].currentTarget.attributes[1].value;
-                let spoiler = ".spoiler-" + data;
-                let all = ".desc-more-" + data;
-
-                $($(target)[0].currentTarget).hide();
-                $(spoiler).hide();
-                $(all).show();
-            })
-        })
+    gtag('config', 'UA-119319669-1');
     </script>
 
 </head>
@@ -95,7 +57,7 @@
             <div class="logo float-left">
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="#intro" class="scrollto"><span class="header-logo">Colette Mazzola</span></a>
+                <a href="#intro" class="scrollto"><span class="header-logo">Colette Mazzola-Randles</span></a>
             </div>
 
             <nav class="main-nav float-right d-none d-lg-block">
@@ -106,7 +68,7 @@
                     <li><a href="#timeline">Timeline</a></li>
                     <li><a href="#portfolio">Media</a></li>
 
-                    <li><a href="#testimonials">Reccomendations</a></li>
+                    <li><a href="#testimonials">Recommendations</a></li>
                     <li><a href="http://blog.cmaz.co.uk">Blog</a></li>
 
 
@@ -148,18 +110,26 @@
 
                     <div class="col-lg-6 content order-lg-1 order-2">
                         <p>
-                            In 2008 I was working as a receptionist in a local hotel in St Anne's On-Sea, I gave birth to a beautiful little girl, I remember thinking …this small bundle of joy is going to depend on me for the rest of my life. I was not the brightest at school, I left with poor GCSE grades but regardless of my past, I still applied to Blackpool and The Fylde College, hoping that it would mark a first step on my career ladder in teaching. I decided that I would enrol on a Computing course, being an adult student, I was worried I wouldn’t fit in, however, I was pleasantly surprised as the course was for only people over 19.
+                            In 2008 I was working as a receptionist in a local hotel in St Anne's On-Sea, I gave birth
+                            to a beautiful little girl, I remember thinking …this small bundle of joy is going to depend
+                            on me for the rest of my life. I was not the brightest at school, I left with poor GCSE
+                            grades but regardless of my past, I still applied to Blackpool and The Fylde College, hoping
+                            that it would mark a first step on my career ladder in teaching. I decided that I would
+                            enrol on a Computing course, being an adult student, I was worried I wouldn’t fit in,
+                            however, I was pleasantly surprised as the course was for only people over 19.
                         </p>
                         <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
                             <div class="icon"><i class="fas fa-address-card"></i></div>
                             <h4 class="title"><a href="">Research Interests </a></h4>
-                            <p class="description">Teachnology Enhanced Learning | Students-as-producers / The 5C's 21st Century Skills </p>
+                            <p class="description">Teachnology Enhanced Learning | Students-as-producers / The 5C's 21st
+                                Century Skills </p>
                         </div>
 
                         <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
                             <div class="icon"><i class="fa fa-bar-chart"></i></div>
                             <h4 class="title"><a href="">PhD E-Research & Technology Enhanced Learning</a></h4>
-                            <p class="description">I am keen to disseminate this research in order to create a ritualised community of practice and build a professional social community.</p>
+                            <p class="description">I am keen to disseminate this research in order to create a
+                                ritualized community of practice and build a professional social community.</p>
                         </div>
                     </div>
 
@@ -169,10 +139,15 @@
                 </div>
 
                 <div class="row about-extra">
-                
+
                     <div class="col-lg-12 wow fadeInUp pt-5 pt-lg-0">
                         <p>
-                            I successfully completed my level 3 qualification and progressed onto the Interactive Media development degree that was offered as a path for progression. The course beyond challenged me but only further confirmed that I wanted to pursue a career in Interactive Media Development. Throughout my time on my courses, the tutors were helpful to me; I began to see them more as friends than just tutors and knew that this was the department that I wanted to have a career in.
+                            I successfully completed my level 3 qualification and progressed onto the Interactive Media
+                            development degree that was offered as a path for progression. The course beyond challenged
+                            me but only further confirmed that I wanted to pursue a career in Interactive Media
+                            Development. Throughout my time on my courses, the tutors were helpful to me; I began to see
+                            them more as friends than just tutors and knew that this was the department that I wanted to
+                            have a career in.
                         </p>
                     </div>
                 </div>
@@ -183,13 +158,21 @@
                     </div>
 
                     <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-                        <p>In 2016 I achieved the status of HEA Fellow for my evidence and reflection of work in higher education</h4>
-                        <p>
-                            This recognition gave me motivation to push myself and I decided to apply for a Master’s in Technology Enhanced Learning with Huddersfield University. This course was great for me as I was working fulltime and I only had to attend four taught sessions per year, these sessions were delivered on a Saturday making it alit more flexible for me to learn.
-                        </p>
-                        <p>
-                            After achieving my MSc. I secured a Senior Tutor for Teaching and Learning position in Computing at Blackpool and the Fylde College. This has inspired me to sign up to a new challenge, I am now studying towards a PhD in E-Research and Technology Enhanced Learning with Lancaster University.
-                        </p>
+                        <p>In 2016 I achieved the status of HEA Fellow for my evidence and reflection of work in higher
+                            education</h4>
+                            <p>
+                                This recognition gave me motivation to push myself and I decided to apply for a Master’s
+                                in Technology Enhanced Learning with Huddersfield University. This course was great for
+                                me as I was working fulltime and I only had to attend four taught sessions per year,
+                                these sessions were delivered on a Saturday making it alit more flexible for me to
+                                learn.
+                            </p>
+                            <p>
+                                After achieving my MSc. I secured a Senior Tutor for Teaching and Learning position in
+                                Computing at Blackpool and the Fylde College. This has inspired me to sign up to a new
+                                challenge, I am now studying towards a PhD in E-Research and Technology Enhanced
+                                Learning with Lancaster University.
+                            </p>
                     </div>
 
                 </div>
@@ -197,43 +180,108 @@
             </div>
         </section>
         <!-- #about -->
-
-
-
         <!--==========================
-      Services Section
+      Awards Services Section
     ============================-->
-        
-    <section id="services" class="section-bg">
+        <section id="services" class="section-bg">
             <div class="container">
-
                 <header class="section-header">
                     <h3>Awards & Accolades</h3>
                     <p>These are the awards and accolades that I have achieved, on my academic journey. </p>
                 </header>
 
-                <div class="row">
-                        <div class="box">
-                        <h3>2020</h3>
-                            <h4 class="title"><a href="">Nominated Educate North Awards - Teaching Excellence Award 2020</a></h4>
-                            <h4 class="title"><a href="https://sway.office.com/qGv77d4A6nsb1VsU?ref=Link">DigiLearn Co-ordinator 2020</a></h4>
-                        <h3>2019</h3>
-                            <h4 class="title"><a href="">MIE Master Trainer 2019</a></h4>
-                            <h4 class="title"><a href="">MIE Expert 2019</a></h4>
-                            <h4 class="title"><a href="">Speaker at EDULEARN (Spain)2019 </a></h4>
-                        <h3>2018</h3>
-                             <h4 class="title"><a href="">Highly Commended For Excellence in Learning and Teaching 2018</a></h4>
-                             <h4 class="title"><a href="http://blog.cmaz.co.uk/post.php?id=71">Conference Speaker 2018 </a></h4>
-                        <h3>2017</h3>
-                             <h4 class="title"><a href="">Fellow of the HEA </a></h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-    <!-- #services -->
+                <div class="">
+                    <div class="box">
+                        <div class="row ">
+                            <div class="col-12 col-md-3 mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/ENW.png" alt="North Educate Award Logo">
+                                    <div class="card-body">
+                                        <p class="card-text">Teaching Excellence Award
+                                            2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/0.jpg" alt="DigiLearnSector Logo">
+                                    <div class="card-body">
+                                        <p class="card-text"><a
+                                                href="https://sway.office.com/qGv77d4A6nsb1VsU?ref=Link">DigiLearn
+                                                Co-originator - FE Engagement Lead </a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/MIET.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text">Microsoft Innovative Educator Trainer </p>
+                                    </div>
+                                </div>
+                            </div>
 
-  <!--==========================
+                            <div class="col-12 col-md-3 mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/MIE.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text">Microsoft Innovative Educator</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--==========================
+      Hidden Div for more content 
+    ============================-->
+
+                            <div class="hiddenawards">
+                                <div class="row">
+
+                                    <div class="col-12 col-md-8 mb-4">
+                                        <div class="card">
+                                            <img class="card-img-top" src="img/EDULEARN.jpg" alt="EDULEARN Logo">
+                                            <div class="card-body">
+                                                <p class="card-text">Speaker at EDULEARN (Spain) 2019 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-3 mb-4">
+                                        <div class="card">
+                                            <img class="card-img-top" src="img/ebi.png" alt=" ">
+                                            <div class="card-body">
+                                                <p class="card-text">EBI Award Outstanding use of IT and/or Technology
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 mb-4">
+                                        <div class="card">
+                                            <img class="card-img-top" src="img/HC.png" alt=" ">
+                                            <div class="card-body">
+                                                <p class="card-text"> Excellence in Learning and Teaching </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-3 mb-4">
+                                        <div class="card">
+                                            <img class="card-img-top" src="img/HEA.png" alt=" ">
+                                            <div class="card-body">
+                                                <p class="card-text">Fellow of the HEA </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> <!-- #HiddenAwards  -->
+                        </div>
+        </section>
+
+        <!-- #services -->
+
+        <!--==========================
       Why Us Section
     ============================-->
 
@@ -269,43 +317,53 @@
                                             <div class="timeline-description">
                                                 <div class="dates">
                                                     <span class="form">Dec 2016</span> - <span class="to">present</span>
-                                                    (<span class="ammount">2 year 4 months</span>)
                                                 </div>
                                                 <div class="desc-content">
-                                                    The delivery and management of Student Learning within the curriculum
+                                                    The delivery and management of Student Learning within the
+                                                    curriculum
                                                     area.
                                                     <ul>
-                                                        <li>Act as mentor for new teachers in the area of teaching and learning.</li>
-                                                        <li>Contribute to staff development within the School in teaching and learning.</li>
+                                                        <li>Act as mentor for new teachers in the area of teaching and
+                                                            learning.</li>
+                                                        <li>Contribute to staff development within the School in
+                                                            teaching and learning.</li>
                                                         <li>To disseminate good practice.</li>
                                                         <li>Develop and use a range of teaching and learning techniques.
                                                         </li>
                                                         <li>Maintain and improve the quality of the School’s work within
-                                                            the and improve the quality of the School’s work within the College’s policies and procedures relating to teaching and learning.</li>
+                                                            the and improve the quality of the School’s work within the
+                                                            College’s policies and procedures relating to teaching and
+                                                            learning.</li>
 
                                                         <li>
-                                                            The delivery and management of Student Learning within the curriculum area.
+                                                            The delivery and management of Student Learning within the
+                                                            curriculum area.
                                                         </li>
                                                         <li>
-                                                            Carry out teaching observations and give appropriate feedback.
+                                                            Carry out teaching observations and give appropriate
+                                                            feedback.
                                                         </li>
                                                         <li>
-                                                            Participate in internal audits/inspections of teaching and learning.
+                                                            Participate in internal audits/inspections of teaching and
+                                                            learning.
                                                         </li>
                                                         <li>
-                                                            Support the development of Equal Opportunities within teaching and learning.
+                                                            Support the development of Equal Opportunities within
+                                                            teaching and learning.
                                                         </li>
                                                         <li>
                                                             Work collaboratively across the college.
                                                         </li>
                                                         <li>
-                                                            Assist with the annual School self-assessment exercise in order to monitor and evaluate School performance.
+                                                            Assist with the annual School self-assessment exercise in
+                                                            order to monitor and evaluate School performance.
                                                         </li>
                                                         <li>
                                                             Work collaboratively across the college.
                                                         </li>
                                                         <li>
-                                                            Assist with monitoring student recruitment, retention and achievement and take remedial action where necessary.
+                                                            Assist with monitoring student recruitment, retention and
+                                                            achievement and take remedial action where necessary.
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -324,17 +382,33 @@
                                             <div class="timeline-description">
                                                 <div class="dates">
                                                     <span class="form">Sep 2016</span> - <span class="to">present</span>
-                                                    (<span class="ammount">3 year 7 months</span>)
                                                 </div>
                                                 <div class="desc-content">
                                                     As a programme leader I am ultimately responsible for academic
                                                     leadership, management and assessment, of the programme that I am
                                                     designated to lead.
                                                     <p>
-                                                        Working closely with the relative module leaders and the course tutors,
-                                                        I am responsible responding to feedback from students, external examiners, Professional, Statutory and Regulatory Bodies (PSRBs) and industry. I am required to ensure student representatives are allocated to the programme board, and that all students have access to a personal tutor. I have good communication with colleagues across the university and collaborative partners, and with external bodies.</p>
+                                                        Working closely with the relative module leaders and the course
+                                                        tutors,
+                                                        I am responsible responding to feedback from students, external
+                                                        examiners, Professional, Statutory and Regulatory Bodies (PSRBs)
+                                                        and industry. I am required to ensure student representatives
+                                                        are allocated to the programme board, and that all students have
+                                                        access to a personal tutor. I have good communication with
+                                                        colleagues across the university and collaborative partners, and
+                                                        with external bodies.</p>
 
-                                                    <p>Further to this I was invited to attend the Education Technology Development Group which looks to connect new ideas and technology and identify the most effective and efficient methods of including these in everyday teaching practice. Working as part of Blackpool and The Fylde Colleges’ technology team is a great opportunity and will allow collaboration of research projects with professionals in other departments. More recently my scholarly research has been published internally at Blackpool and The Fylde College in the scholarship review 2016; this research has additionally been submitted to the Research in Learning Technology for consideration for publication.</p>
+                                                    <p>Further to this I was invited to attend the Education Technology
+                                                        Development Group which looks to connect new ideas and
+                                                        technology and identify the most effective and efficient methods
+                                                        of including these in everyday teaching practice. Working as
+                                                        part of Blackpool and The Fylde Colleges’ technology team is a
+                                                        great opportunity and will allow collaboration of research
+                                                        projects with professionals in other departments. More recently
+                                                        my scholarly research has been published internally at Blackpool
+                                                        and The Fylde College in the scholarship review 2016; this
+                                                        research has additionally been submitted to the Research in
+                                                        Learning Technology for consideration for publication.</p>
                                                 </div>
                                             </div>
 
@@ -351,14 +425,32 @@
                                             <div class="timeline-description">
                                                 <div class="dates">
                                                     <span class="form">Dec 2012</span> - <span class="to">present</span>
-                                                    (<span class="ammount">1 year 3 months</span>)
+
                                                 </div>
                                                 <div class="desc-content">
-                                                    As a Higher education (HE) and Further education lecturer I teach academic and vocational subjects to undergraduate and postgraduate students aged 16 upwards.
-                                                    I Teach methods include lectures, seminars, tutorials, practical demonstrations, field work and e-learning. Multimedia technologies are increasingly used.
+                                                    As a Higher education (HE) and Further education lecturer I teach
+                                                    academic and vocational subjects to undergraduate and postgraduate
+                                                    students aged 16 upwards.
+                                                    I Teach methods include lectures, seminars, tutorials, practical
+                                                    demonstrations, field work and e-learning. Multimedia technologies
+                                                    are increasingly used.
 
                                                     <p>
-                                                        As a HE/ FE lecturer I pursue my own research to contribute to the wider research activities of my department. My aim is to have my scholarship published externally in books or scholarly articles. My academic practice and scholarly research (which typically investigates using technology to improve the student experience) has included contributing to a variety of Blackpool and The Fylde College conferences. At the Second Annual Learning and Teaching Conference in 2015 (Scholarship Informed Teaching and Learning) I presented a workshop that demonstrated good practice in using collaborative environments to enhance student participation. Additionally I contributed to Blackpool and The Fylde Colleges’ Third Annual Learning and Teaching Conference (Technology Enabled and Enhanced Learning) where I presented my research into pedagogies that can assist technology enhanced learning.</p>
+                                                        As a HE/ FE lecturer I pursue my own research to contribute to
+                                                        the wider research activities of my department. My aim is to
+                                                        have my scholarship published externally in books or scholarly
+                                                        articles. My academic practice and scholarly research (which
+                                                        typically investigates using technology to improve the student
+                                                        experience) has included contributing to a variety of Blackpool
+                                                        and The Fylde College conferences. At the Second Annual Learning
+                                                        and Teaching Conference in 2015 (Scholarship Informed Teaching
+                                                        and Learning) I presented a workshop that demonstrated good
+                                                        practice in using collaborative environments to enhance student
+                                                        participation. Additionally I contributed to Blackpool and The
+                                                        Fylde Colleges’ Third Annual Learning and Teaching Conference
+                                                        (Technology Enabled and Enhanced Learning) where I presented my
+                                                        research into pedagogies that can assist technology enhanced
+                                                        learning.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -395,19 +487,25 @@
                                                 </div>
                                                 <div class="desc-content">
                                                     This Programme in E-Research and Technology Enhanced Learning will
-                                                    provide you with training in research methodologies, expose you to key
-                                                    literature that will enable you to link cutting edge learning theories
+                                                    provide you with training in research methodologies, expose you to
+                                                    key
+                                                    literature that will enable you to link cutting edge learning
+                                                    theories
                                                     with your professional
-                                                    practice as well as providing you with a period of intensive, individual
-                                                    research that is supervised by an expert in the field leading to a PhD
+                                                    practice as well as providing you with a period of intensive,
+                                                    individual
+                                                    research that is supervised by an expert in the field leading to a
+                                                    PhD
                                                     in E-Research and Technology Enhanced
                                                     Learning. This PhD doctoral programme is designed specifically for
                                                     professionals, for people who
-                                                    wish to study to an advanced level and carry out a piece of research of
+                                                    wish to study to an advanced level and carry out a piece of research
+                                                    of
                                                     the highest possible standard in an aspect of their professional
                                                     practice.<br />
 
-                                                    The programme in E-Research and Technology Enhanced Learning builds on
+                                                    The programme in E-Research and Technology Enhanced Learning builds
+                                                    on
                                                     the expertise of the members of the Centre for Technology Enhanced
                                                     Learning in the Department of Educational Research and their long
                                                     experience in running Masters
@@ -434,10 +532,13 @@
                                                 <div class="desc-content">
                                                     Technology is increasingly a key element in effective education and
                                                     training. The web, mobile devices, interactive white boards, Virtual
-                                                    Learning Environments, blogging, wikis and email are tools that may be
+                                                    Learning Environments, blogging, wikis and email are tools that may
+                                                    be
                                                     used in teaching. But how effective are they
-                                                    at supporting learning? New pedagogical models such as massively open
-                                                    online courses (MOOCs), learning analytics where data is used to analyse
+                                                    at supporting learning? New pedagogical models such as massively
+                                                    open
+                                                    online courses (MOOCs), learning analytics where data is used to
+                                                    analyse
                                                     and improve learning, and rhizomatic learning are all explained and
                                                     critically examined.
                                                 </div>
@@ -460,7 +561,8 @@
                                                 </div>
                                                 <div class="desc-content">
                                                     The areas that were studied, Curriculum Development and Educational
-                                                    Change, Action Research for Change and Innovation, Developing Teaching
+                                                    Change, Action Research for Change and Innovation, Developing
+                                                    Teaching
                                                     Learning and Assessment, Introduction to Teaching Learning and
                                                     Assessment, Wider Professional Practice and
                                                     Developing Coaching and Mentoring.
@@ -486,11 +588,14 @@
 
                                                 </div>
                                                 <div class="desc-content">
-                                                    The areas that were studied, 3D Generated Graphics, Interactive Media
-                                                    Marketing and Business, Dynamic Web Development, Programming Interactive
+                                                    The areas that were studied, 3D Generated Graphics, Interactive
+                                                    Media
+                                                    Marketing and Business, Dynamic Web Development, Programming
+                                                    Interactive
                                                     Assets, Work Experience Assessment Report, Mobile Application
                                                     Development, Project Management,
-                                                    Evolving Media Technologies, Designing and Creating Advanced Websites.
+                                                    Evolving Media Technologies, Designing and Creating Advanced
+                                                    Websites.
                                                 </div>
                                             </div>
 
@@ -527,7 +632,6 @@
                 </div>
 
                 <div class="row portfolio-container">
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-ebi">
                         <div class="portfolio-wrap">
                             <img src="img/portfolio/Award1%20EBI.png" class="img-fluid" alt="">
@@ -535,8 +639,11 @@
                                 <h4><a href="#">EBI Awards</a></h4>
                                 <p>App</p>
                                 <div>
-                                    <a href="img/portfolio/Award1%20EBI.png" data-lightbox="portfolio" data-title="EBI Awards" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                    <a href="img/portfolio/Award1%20EBI.png" data-lightbox="portfolio"
+                                        data-title="EBI Awards" class="link-preview" title="Preview"><i
+                                            class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i
+                                            class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -549,8 +656,11 @@
                                 <h4><a href="#">EBI Awards</a></h4>
                                 <p>Web</p>
                                 <div>
-                                    <a href="img/portfolio/Award3%20EBI.png" class="link-preview" data-lightbox="portfolio" data-title="EBI Awards" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                    <a href="img/portfolio/Award3%20EBI.png" class="link-preview"
+                                        data-lightbox="portfolio" data-title="EBI Awards" title="Preview"><i
+                                            class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i
+                                            class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -563,8 +673,11 @@
                                 <h4><a href="#">EBI Awards</a></h4>
                                 <p>App</p>
                                 <div>
-                                    <a href="img/portfolio/Award2%20EBI.png" class="link-preview" data-lightbox="portfolio" data-title="EBI Awards" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                    <a href="img/portfolio/Award2%20EBI.png" class="link-preview"
+                                        data-lightbox="portfolio" data-title="EBI Awards" title="Preview"><i
+                                            class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i
+                                            class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -577,8 +690,10 @@
                                 <h4><a href="#">HEA Conference</a></h4>
                                 <p>Card</p>
                                 <div>
-                                    <a href="img/portfolio/HEA4.png" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                    <a href="img/portfolio/HEA4.png" class="link-preview" data-lightbox="portfolio"
+                                        data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i
+                                            class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -591,8 +706,10 @@
                                 <h4><a href="#">HEA Conference</a></h4>
                                 <p>Web</p>
                                 <div>
-                                    <a href="img/portfolio/HEA1.png" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                    <a href="img/portfolio/HEA1.png" class="link-preview" data-lightbox="portfolio"
+                                        data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i
+                                            class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -605,75 +722,21 @@
                                 <h4><a href="#">HEA Conference</a></h4>
                                 <p>App</p>
                                 <div>
-                                    <a href="img/portfolio/HEA2.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.1s">
-                        <div class="portfolio-wrap">
-                            <a><iframe src="https://www.youtube.com/embed/sFZ1AlTMueg" width="380" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe></a>
-                            <div class="portfolio-info">
-                                <h4><a href="#">Reflection</a></h4>
-                                <p>Reflection</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <iframe src="https://www.youtube.com/embed/uDRc6wou0Jw" width="380" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe>
-                            <div class="portfolio-info">
-                                <h4><a href="#">Technology Enabled and Enhanced Learning</a></h4>
-                                <p>Web</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <iframe src="https://www.youtube.com/embed/B5lgQ3PpcpQ" width="380" height="156" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe>
-                            <div class="portfolio-info">
-                                <h4><a href="#">Fit For Purpose</a></h4>
-                                <p>Web</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <iframe src="https://www.youtube.com/embed/5oSwjwKq3Ic" width="380" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe>
-                            <div class="portfolio-info">
-                                <h4><a href="#">Bring Your Own Device</a></h4>
-                                <p>Web</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <iframe src="https://www.youtube.com/embed/C5yymQCL5Co" width="380" height="156" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe>
-                            <div class="portfolio-info">
-                                <h4><a href="#">The Active-Flipped Approach</a></h4>
-                                <p>Web</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-vid" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <iframe width="380" height="210" src="https://www.youtube.com/embed/VxLJKhf4rlA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" alt=""></iframe>
-                            <div class="portfolio-info">
-                                <h4><a href="#">Student Feedback</a></h4>
-                                <div>
-
+                                    <a href="img/portfolio/HEA2.png" class="link-preview" data-lightbox="portfolio"
+                                        data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i
+                                            class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                    
+                <iframe class="youtubeplay"
+                    src="https://www.youtube.com/embed/?listType=playlist&amp;list=PLCkVBQ6nY0jC4DrOhO1w3FXKKcI-MBmAc"
+                    frameborder="0" allowfullscreen=""></iframe>
+  
+        </div>
         </section><!-- #portfolio -->
 
         <!--==========================
@@ -683,7 +746,7 @@
             <div class="container">
 
                 <header class="section-header">
-                    <h3>Reccomendations</h3>
+                    <h3>Recommendations</h3>
                 </header>
 
                 <div class="row justify-content-center">
@@ -834,7 +897,9 @@ END;
 
                     <div class="col-lg-6">
                         <div class="map mb-4 mb-lg-0">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18872.738129586614!2d-3.0300384398819715!3d53.75224014295786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b410f496bcd9b%3A0x17a7af049e911eed!2sLytham+St+Annes%2C+Lytham+Saint+Annes!5e0!3m2!1sen!2suk!4v1558210807689!5m2!1sen!2suk" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18872.738129586614!2d-3.0300384398819715!3d53.75224014295786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b410f496bcd9b%3A0x17a7af049e911eed!2sLytham+St+Annes%2C+Lytham+Saint+Annes!5e0!3m2!1sen!2suk!4v1558210807689!5m2!1sen!2suk"
+                                frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
 
 
                         </div>
@@ -862,23 +927,31 @@ END;
                             <form action="" method="post" role="form" class="contactForm">
                                 <div class="form-row">
                                     <div class="form-group col-lg-6">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <input type="text" name="name" class="form-control" id="name"
+                                            placeholder="Your Name" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" />
                                         <div class="validation"></div>
                                     </div>
                                     <div class="form-group col-lg-6">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="Your Email" data-rule="email"
+                                            data-msg="Please enter a valid email" />
                                         <div class="validation"></div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <input type="text" class="form-control" name="subject" id="subject"
+                                        placeholder="Subject" data-rule="minlen:4"
+                                        data-msg="Please enter at least 8 chars of subject" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                        data-msg="Please write something for us" placeholder="Message"></textarea>
                                     <div class="validation"></div>
                                 </div>
-                                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                                <div class="text-center"><button type="submit" title="Send Message">Send
+                                        Message</button></div>
                             </form>
                         </div>
                     </div>
@@ -895,18 +968,21 @@ END;
   ============================-->
     <footer id="footer">
 
+
+
         <div class="copyright">
-            &copy; Colette Mazzola <strong>2019</strong> All Rights Reserved <a href="privacy.php"> Privacy </a>
-        </br>
-           <a href="https://www.pinterest.co.uk/colettemazzola/"><img src="img/pinterest.png" style="width:50px; height:50px"></a>
+            &copy; Colette Mazzola-Randles <strong>2020</strong> All Rights Reserved <a href="privacy.php"> Privacy </a>
+         
+            <a href="https://www.pinterest.co.uk/colettemazzola/"><img src="img/pinterest.png"
+                    style="width:50px; height:50px"></a>
 
 
-           <a href="https://twitter.com/ColetteMazzola">
-             <img src="img/twitter.png" style="width:50px; height:50px">
-         </a>
+            <a href="https://twitter.com/ColetteMazzola">
+                <img src="img/twitter.png" style="width:50px; height:50px">
+            </a>
 
-         <a href="https://www.linkedin.com/in/colette-mazzola-msc-81a6639a/">
-              <img src="img/linkedin.png" style="width:50px; height:50px">
+            <a href="https://www.linkedin.com/in/colette-mazzola-msc-81a6639a/">
+                <img src="img/linkedin.png" style="width:50px; height:50px">
             </a>
 
 
