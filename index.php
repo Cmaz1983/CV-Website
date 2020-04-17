@@ -230,20 +230,19 @@
                                 </div>
                             </div>
 
-
-
-                            <!--==========================
+     <!--==========================
       Hidden Div for more content 
     ============================-->
 
                             <div class="hiddenawards">
                                 <div class="row">
 
-                                <div class="col-12 col-md-8 mb-4">
+                                    <div class="col-12 col-md-8 mb-4">
                                         <div class="card">
                                             <img class="card-img-top" src="img/5Cs.png" alt=" ">
                                             <div class="card-body">
-                                                <p class="card-text">Collaborative Framework - 5Cs 21st Century Skills (2020) </p>
+                                                <p class="card-text">Collaborative Framework - 5Cs 21st Century Skills
+                                                    (2020) </p>
                                             </div>
                                         </div>
                                     </div>
@@ -251,7 +250,8 @@
                                         <div class="card">
                                             <img class="card-img-top" src="img/ebi.png" alt=" ">
                                             <div class="card-body">
-                                                <p class="card-text">EBI Award Outstanding use of IT and/or Technology (2019)
+                                                <p class="card-text">EBI Award Outstanding use of IT and/or Technology
+                                                    (2019)
                                                 </p>
                                             </div>
                                         </div>
@@ -263,16 +263,16 @@
                                         <div class="card">
                                             <img class="card-img-top" src="img/EDULEARN.jpg" alt="EDULEARN Logo">
                                             <div class="card-body">
-                                                <p class="card-text">Presenter: EDULEARN (Spain) (2019) 11th International Conference on Education and New Learning Technologies
-Palma, Spain. 1-3 July, 2019.
-ISBN: 978-84-09-12031-4 / ISSN: 2340-1117
-doi: 10.21125/edulearn.2019
-Publisher: IATED </p>
+                                                <p class="card-text">Presenter: EDULEARN (Spain) (2019) 11th
+                                                    International Conference on Education and New Learning Technologies
+                                                    Palma, Spain. 1-3 July, 2019.
+                                                    ISBN: 978-84-09-12031-4 / ISSN: 2340-1117
+                                                    doi: 10.21125/edulearn.2019
+                                                    Publisher: IATED </p>
                                             </div>
                                         </div>
                                     </div>
 
-                                  
                                     <div class="col-12 col-md-3 mb-4">
                                         <div class="card">
                                             <img class="card-img-top" src="img/HC.png" alt=" ">
@@ -280,20 +280,13 @@ Publisher: IATED </p>
                                                 <p class="card-text"> Excellence in Learning and Teaching (2018) </p>
                                             </div>
                                         </div>
-                                
-
-                                    
-
-
-                                </div>
-                            </div> <!-- #HiddenAwards  -->
-                        </div>
+                                    </div>
+                                </div> <!-- #HiddenAwards  -->
+                            </div>
         </section>
 
-        <!-- #services -->
-
-        <!--==========================
-      Why Us Section
+    <!--==========================
+      Timeline Section
     ============================-->
 
         <section id="timeline" class="clearfix">
@@ -469,9 +462,6 @@ Publisher: IATED </p>
                                 </div>
                             </div>
                         </div>
-
-
-
 
                         <div class="wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                             <div class="box">
@@ -742,12 +732,12 @@ Publisher: IATED </p>
                         </div>
                     </div>
                 </div>
-                    
+
                 <iframe class="youtubeplay"
                     src="https://www.youtube.com/embed/?listType=playlist&amp;list=PLCkVBQ6nY0jC4DrOhO1w3FXKKcI-MBmAc"
                     frameborder="0" allowfullscreen=""></iframe>
-  
-        </div>
+
+            </div>
         </section><!-- #portfolio -->
 
         <!--==========================
@@ -826,7 +816,7 @@ END;
         </section><!-- #testimonials -->
 
 
-       
+
         <!--==========================
       Contact Section
     ============================-->
@@ -916,7 +906,7 @@ END;
 
         <div class="copyright">
             &copy; Colette Mazzola-Randles <strong>2020</strong> All Rights Reserved <a href="privacy.php"> Privacy </a>
-         
+
             <a href="https://www.pinterest.co.uk/colettemazzola/"><img src="img/pinterest.png"
                     style="width:50px; height:50px"></a>
 
