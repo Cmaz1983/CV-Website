@@ -194,7 +194,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-3 mb-4">
                             <div class="card">
-                                <img class="card-img-top" src="img/EDtech.png" alt="The Lights">
+                                <img class="card-img-top" src="img/EDtech.jpg" alt="The Lights">
                                 <div class="card-body">
                                     <a href="http://anchor.fm/edtech-talks">
                                         The EdTech Talks (2020) </a></p>
@@ -204,7 +204,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-3 mb-4">
                             <div class="card">
-                                <img class="card-img-top" src="img/Logo.png" alt="The Lights">
+                                <img class="card-img-top" src="img/Logo.jpg" alt="The Lights">
                                 <div class="card-body">
                                     <a href="https://soundcloud.com/colette-mazzola/the-lights-podcast-colette-mazzola">
                                         The Lights Podcast (2020) </a></p>
@@ -215,7 +215,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-3 mb-4">
                             <div class="card">
-                                <img class="card-img-top" src="img/ENW.png" alt="North Educate Award Logo">
+                                <img class="card-img-top" src="img/ENW.jpg" alt="North Educate Award Logo">
                                 <div class="card-body">
                                     <p class="card-text">Teaching Excellence Award
                                         (2020)</p>
@@ -234,7 +234,7 @@
                         </div>
                         <div class="col-12 col-sm-6 col-lg-3 mb-4">
                             <div class="card">
-                                <img class="card-img-top" src="img/MIET.png" alt="">
+                                <img class="card-img-top" src="img/MIET.jpg" alt="">
                                 <div class="card-body">
                                     <p class="card-text">Microsoft Innovative Educator Trainer </p>
                                 </div>
@@ -243,7 +243,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-3 mb-4">
                             <div class="card">
-                                <img class="card-img-top" src="img/MIE.png" alt="">
+                                <img class="card-img-top" src="img/MIE.jpg" alt="">
                                 <div class="card-body">
                                     <p class="card-text">Microsoft Innovative Educator</p>
                                 </div>
@@ -256,7 +256,7 @@
 
                         <div class="col-12 col-sm-12 col-lg-6 mb-4">
                             <div class="card">
-                                <img class="card-img-top" src="img/5Cs.png" alt=" ">
+                                <img class="card-img-top" src="img/5Cs.jpg" alt=" ">
                                 <div class="card-body">
                                     <p class="card-text">Collaborative Framework - 5Cs 21st Century Skills
                                         (2020) </p>
@@ -265,7 +265,7 @@
                         </div>
                         <div class="col-12 col-sm-6 col-lg-3 mb-4">
                             <div class="card">
-                                <img class="card-img-top" src="img/ebi.png" alt=" ">
+                                <img class="card-img-top" src="img/ebi.jpg" alt=" ">
                                 <div class="card-body">
                                     <p class="card-text">EBI Award Outstanding use of IT and/or Technology
                                         (2019)
@@ -276,7 +276,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-3 mb-4">
                             <div class="card">
-                                <img class="card-img-top" src="img/HC.png" alt=" ">
+                                <img class="card-img-top" src="img/HC.jpg" alt=" ">
                                 <div class="card-body">
                                     <p class="card-text"> Excellence in Learning and Teaching (2018) </p>
                                 </div>
