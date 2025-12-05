@@ -1,0 +1,353 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    ont-size: 80px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+#footer {
+    text-align: center;
+    background: #ffffff;
+    padding: 15px 0 15px 0;
+    color: #202020;
+    font-size: 16px;
+}
+
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #ffff;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#achievments img{
+
+} 
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.timeline-container {
+    width: 100%;
+}
+
+.timeline-container .timeline-inner {
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.timeline-container .timeline-inner .timeline-heading {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #202020;
+}
+
+.timeline-container .timeline-inner .place {
+    padding-left: 30px;
+}
+
+.timeline-container .timeline-inner .place .place-title {
+    font-weight: 600;
+    font-size: 25px;
+    color: #202020;
+}
+
+.timeline-container .timeline-inner .place .time-at {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 8px;
+    color: #202020;
+    margin-bottom: 15px;
+}
+
+.timeline-container .timeline-inner .place .position {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.timeline-container .timeline-inner .place .position .bullet {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color: #666;
+    border-radius: 100px;
+    top: 8px;
+    left: -4px;
+}
+
+.timeline-container .timeline-inner .place .position .title {
+    font-weight: 700;
+    color: #202020;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.timeline-container .timeline-inner .place .position .timeline-description {
+    color: #333;
+    font-size: 15px;
+    padding-left: 20px;
+    border-left: solid 2px #666;
+}
+
+.timeline-container .timeline-inner .place .position .timeline-description .dates {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+
+.timeline-container .timeline-inner .education {
+    margin-top: 40px;
+}
+
+.timeline-container .timeline-inner .moretext {
+    color: #202020;
+    cursor: pointer;
+    user-select: none;
+}
+
+.youtubeplay {
+    width: 100%;
+    height: 500px;
+}
+
+
+/* Contact Section */
+
+#contact {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+#contact .section-header {
+    padding-bottom: 30px;
+}
+
+#contact .contact-about h3 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #202020;
+}
+
+#contact .contact-about p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #888;
+}
+
+#contact .social-links {
+    padding-bottom: 20px;
+}
+
+#contact .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    color: #202020;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid #202020;
+}
+
+#contact .social-links a:hover {
+    background: #202020;
+    color: #fff;
+}
+
+#contact .info {
+    color: #4e2a82;
+}
+
+#contact .info i {
+    font-size: 32px;
+    color: #202020;
+    float: left;
+    line-height: 1;
+}
+
+#contact .info p {
+    padding: 0 0 10px 36px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+#contact .form #sendmessage {
+    color: #202020;
+    border: 1px solid #202020;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+    color: red;
+    display: none;
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show,
+#contact .form #errormessage.show,
+#contact .form .show {
+    display: block;
+}
+
+#contact .form .validation {
+    color: red;
+    display: none;
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#contact .form input,
+#contact .form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+#contact .form button[type="submit"] {
+    background: #202020;
+    border: 0;
+    border-radius: 20px;
+    padding: 8px 30px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#contact .form button[type="submit"]:hover {
+    background: #0067d5;
+    cursor: pointer;
+}
+
+.navbar a {
+    color: #202020;
+}
+
+.navbar a:hover {
+    color: #62875e;
+}
+
+.nav-item a {
+    color: #202020;
+}
+
+.nav-item a:hover {
+    color: #62875e;
+}
+
+
+/*--◤◢◣◥◤ ◢◣◆◢◣◥◤◢◣◥◤◥◤◢◣◥◤◢◣◥◤ ◢◣◆◢◣◥◤◢◣◥*/
+
+.box {
+    position: relative;
+}
+
+.awards_container {
+    position: relative;
+    display: flex;
+    flex-basis: 25%;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.awards_container .award {
+    width: 33.33333%;
+    padding: 10px;
+}
+
+.awards_container .double-size {
+    width: 66.6666%;
+}
+
+.awards_container .award .card {
+    width: 100%;
+    height: 100%;
+}
+
+.awards_container .award .card .card-img-top {
+    height: 300px;
+}
+
+.jumbotron {
+    background-color: #ffffff;
+    min-height: 150px;
+}
+
+@media (max-width: 576px) {
+    .awards_container .award {
+        width: 100%;
+    }
+    .awards_container .double-size {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .awards_container .award {
+        width: 50%;
+    }
+    .awards_container .double-size {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .awards_container .award {
+        width: 33.33333%;
+        padding: 10px;
+    }
+    .awards_container .double-size {
+        width: 66.6666%!important;
+    }
+}
